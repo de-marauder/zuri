@@ -1,16 +1,14 @@
-# Check if a word is a palindrome
+# Check if a word is a anagram
 # Example:
 # find_anagrams("hello") --> False
 # find_anagrams("racecar") --> True
 
 
-def find_palindrome(word):
+def find_anagram(word1, word2):
     # [assignment] Add your code here
-    if word.lower() == word[::-1].lower():
-        return True
-
-    return False
+   
+    return sorted(word1.lower()) == sorted(word2.lower())
 
 
-print(find_palindrome('Racecar'))
-print(find_palindrome('hello'))
+print(find_anagram('Race', 'care'))
+print(find_anagram('hello', 'hollo'))
