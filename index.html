@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "sans-serif";
+        margin: .5rem;
+        width: 100vw;
+        height: 100vh;
+        background: white;
+      }
+      .wrapper {
+        text-align: center;
+        width: 90%;
+        max-width: 700px;
+        border-bottom: 2px solid #666;
+      }
+      .header {
+        background: #666;
+        padding: 1rem;
+        color: white;
+      }
+      .main {
+        background: #eee;
+        padding: 2rem 1rem;
+      }
+      h3 {
+        font-weight: 500;
+        font-size: 1.3rem;
+      }
+      .inputs {
+        padding: 1rem;
+        width: max-content;
+        margin: 1rem auto 2rem;
+        text-align: left;
+      }
+      .btn {
+        font-size: 1rem;
+        text-decoration: none;
+        color: white;
+        border: 0;
+        padding: 1rem;
+        cursor: pointer;
+        background-color: hsl(182, 25%, 50%);
+      }
+      .btn:hover {
+        background-color: hsl(182, 25%, 55%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="wrapper">
+        <header class="header">Quiz on import Facts</header>
+        <main class="main">
+          <h3>Which one of these is a JavaScript package manager?</h3>
+
+          <form action="/">
+            <section class="inputs">
+              <div class="options">
+                <input name="ans" value="Node.Js" type="radio" />
+                <label>a: Node.Js</label>
+              </div>
+              <div class="options">
+                <input name="ans" value="TypeScript" type="radio" />
+                <label>b: TypeScript</label>
+              </div>
+              <div class="options">
+                <input name="ans" value="npm" type="radio" /> <label>c: npm</label>
+              </div>
+            </section>
+            <a class="btn" href="#">Previous Question</a>
+            <button class="btn" type="submit">Next Question</button>
+          </form>
+        </main>
+    </section>
+  </body>
+</html>
