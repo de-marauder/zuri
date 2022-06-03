@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      description="Here lies de-marauder ready to tend your web problems be they as they may."
+    />
+    <title>De-marauder's domain</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <section class="container">
+        <h1 class="logo"><a href='/'>De_marauder</a></h1>
+        <nav class="nav">
+          <ul class="nav__pages">
+            <li class="nav__item"><a href="/index.html">About</a></li>
+            <li class="nav__item">
+              <a href="/contact.html">Contact</a>
+            </li>
+            <li class="nav__item active">
+              <a href="/register.html">Register</a>
+            </li>
+            <li class="nav__item"><a href="/login.html">login</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="form__wrapper">
+          <h1>Register</h1>
+          <form class="form grid">
+            <input
+              class="form__input"
+              required
+              placeholder="First Name"
+              type="text"
+              name="f_name"
+              id=""
+            />
+            <input
+              class="form__input"
+              required
+              placeholder="Last Name"
+              type="text"
+              name="l_name"
+              id=""
+            />
+            <input
+              class="form__input"
+              required
+              placeholder="Enter your Phone number"
+              type="tel"
+              name="phone"
+              id=""
+            />
+            <input
+              class="form__input"
+              required
+              placeholder="E-mail address"
+              type="email"
+              name="email"
+              id=""
+            />
+            <select class="form__input" required name="gender" id="">
+              <option value="male">male</option>
+              <option value="female">female</option>
+            </select>
+            <input
+              required
+              placeholder="Enter your country"
+              type="text"
+              name="country"
+              id=""
+              class="form__input"
+            />
+            <input
+              required
+              placeholder="Enter your state or province"
+              type="text"
+              name="state"
+              id=""
+              class="form__input"
+            />
+            <input
+              class="form__input"
+              required
+              placeholder="Enter password"
+              type="password"
+              name="password1"
+              id=""
+            />
+            <input
+              class="form__input"
+              required
+              placeholder="Confirm password"
+              type="password"
+              name="password2"
+              id=""
+            />
+
+            <input class="btn" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <nav class="nav">
+        <ul class="nav__pages">
+          <li class="nav__item"><a href="/index.html">About</a></li>
+          <li class="nav__item"><a href="/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
