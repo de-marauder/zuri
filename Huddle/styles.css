@@ -39,7 +39,8 @@ h5,
 h6 {
   font-family: "Poppins", sans-serif;
 }
-img, svg {
+img,
+svg {
   width: 100%;
 }
 ul {
@@ -119,7 +120,7 @@ ul {
   box-shadow: 0 1px 0.3rem #eee;
 }
 .btn-sec:hover {
-  color: var(--grayish-blue)
+  color: var(--grayish-blue);
 }
 
 .text h1 {
@@ -145,7 +146,7 @@ ul {
   width: 90%;
 }
 .hero .image {
-    animation: fade-in-up 1s ease-in-out forwards running;
+  animation: fade-in-up 1s ease-in-out forwards running;
 }
 /* Cards */
 
@@ -157,10 +158,10 @@ ul {
   padding: 2rem;
   border-radius: 1rem;
   margin-bottom: 2rem;
-  animation: fade-in-up 1s ease-in-out  forwards running;
+  animation: fade-in-up 1s ease-in-out forwards running;
 }
 .card p {
-    color: var(--grayish-blue);
+  color: var(--grayish-blue);
 }
 .card:nth-of-type(even) {
   flex-direction: row-reverse;
@@ -187,11 +188,11 @@ footer {
   margin-bottom: 2rem;
 }
 .cta .btn:hover {
-    box-shadow: 0 3px .2rem #eee;
+  box-shadow: 0 3px 0.2rem #eee;
 }
 footer .logo {
-    width: fit-content;
-    margin-bottom: 3rem;
+  width: fit-content;
+  margin-bottom: 3rem;
 }
 footer .icon {
   width: 15px;
@@ -203,7 +204,7 @@ footer .container {
 footer #footer-nav.flex,
 footer ul.flex {
   gap: 0rem;
-  margin: 0 1rem 1rem 0
+  margin: 0 1rem 1rem 0;
   /* width: ; */
 }
 footer ul.socials {
@@ -217,47 +218,60 @@ footer .socials li:hover {
   color: var(--pink);
 }
 footer .copyright {
-    font-size: 0.5rem;
-    text-align: right;
+  font-size: 0.5rem;
+  text-align: right;
   margin-top: 3rem;
   padding-bottom: 3rem;
 }
 #footer-nav.flex {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+footer a {
+  display: inline;
+  color: #aaa;
+  text-decoration: none;
+}
+footer a.btn {
+  color: #333;
+}
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 760px) {
-    .card.cta {
-        width: 90%;
-    }
-    footer .copyright{
-        text-align: center;
-    }
-    footer .socials {
-        width: 100%;
-        justify-content: center;
-    }
-    footer #footer-nav.flex > ul:first-child {
-        margin-bottom: 2rem !important;
-    }
-    .card .image {
-        height: 50%;
-    }
-    .card, .hero {
-        text-align: center;
-    }
-    .hero {
-        background: var(--very-pale-cyan) url(./images/bg-hero-mobile.svg);
-      }
+  .card.cta {
+    width: 90%;
+  }
+  footer .copyright {
+    text-align: center;
+  }
+  footer .socials {
+    width: 100%;
+    justify-content: center;
+  }
+  footer #footer-nav.flex > ul:first-child {
+    margin-bottom: 2rem !important;
+  }
+  .card .image {
+    height: 50%;
+  }
+  .card,
+  .hero {
+    text-align: center;
+  }
+  .hero {
+    background: var(--very-pale-cyan) url(./images/bg-hero-mobile.svg);
+  }
 }
 
 @keyframes fade-in-up {
-    from {
-        opacity: 0;
-        transform: translateY(50%);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(50%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

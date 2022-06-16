@@ -198,14 +198,13 @@ input:not(:focus):not(:placeholder-shown):invalid ~ .error {
 }
 
 #disclaimer #terms {
-    color: var(--red);
-    text-decoration: none;
-    font-weight: 600;
-  }
-  #disclaimer #terms:hover {
+  color: var(--red);
+  text-decoration: none;
+  font-weight: 600;
+}
+#disclaimer #terms:hover {
   text-decoration: underline;
 }
-
 @media screen and (max-width: 780px) {
   .form-wrapper .form > .text {
     margin: 2.5rem 0 1.5rem;
@@ -223,4 +222,11 @@ footer {
   text-align: center;
   width: 100%;
   padding-bottom: 1rem;
+}
+footer a {
+  text-decoration: none;
+}
+footer a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
