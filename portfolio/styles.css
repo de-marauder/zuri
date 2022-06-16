@@ -52,7 +52,7 @@
   padding: 1rem 2rem;
   color: rgba(255, 255, 255, 0.5);
   background: var(--sec-color);
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 .nav__pages {
   list-style: none;
@@ -81,6 +81,36 @@
 }
 .nav__item:hover a {
   color: var(--pri-text-color);
+}
+
+.source {
+  position: relative;
+}
+.source img {
+  border-radius: 50%;
+}
+.source::before {
+  opacity: 0;
+  content: "source";
+  background: white;
+  color: black;
+  border-radius: 1rem;
+  position: absolute;
+  top: -200%;
+  left: -25%;
+  padding: 0.5rem;
+  font-size: 0.7rem;
+  transform: scale(0);
+  transform-origin: bottom;
+  transition: 1s ease-in-out
+}
+.source:hover::before {
+  content: "source";
+  opacity: 1;
+  transform: scale(1);
+}
+.source img:hover {
+  box-shadow: white 0 0 10px;
 }
 
 footer {

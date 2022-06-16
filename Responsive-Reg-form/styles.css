@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* primary */
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+
+  /* accent */
+  --blue: hsl(248, 32%, 49%);
+
+  /* Neutral */
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+
+  --radius: 5px;
+}
+
+body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background: url("./images/bg-intro-desktop.png"),
+    linear-gradient(to right, var(--red) 100%, rgba(255, 255, 255, 0));
+}
+
+input {
+  border: 1px solid #aaa;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+input:focus,
+input:focus-within,
+input:focus-visible,
+input:active {
+  outline: none;
+  /* border: 1px solid var(--dark-blue); */
+  box-shadow: 0 0 3px var(--grayish-blue);
+}
+input::placeholder {
+  font-weight: 500;
+}
+input[type="submit"] {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  background-color: var(--green);
+}
+
+input[type="email"]:not(:focus):not(:placeholder-shown):invalid {
+  color: var(--red);
+}
+input:not(:focus):not(:placeholder-shown):invalid {
+  border: 1px solid var(--red);
+}
+input:not(:focus):not(:placeholder-shown):invalid ~ .error {
+  display: block;
+}
+
+@media screen and (max-width: 780px) {
+  body {
+    min-height: 100vh;
+    height: auto;
+    padding: 5rem 0;
+    background: url("./images/bg-intro-mobile.png"),
+      linear-gradient(to right, var(--red) 100%, rgba(255, 255, 255, 0));
+  }
+
+  input[type="submit"] {
+    font-weight: 400;
+  }
+}
+
+.container {
+  max-width: 1000px;
+  padding: 0 3rem;
+  margin: 0 auto;
+  height: 100%;
+}
+.error {
+  display: none;
+}
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+.flex-1 {
+  flex-basis: 50%;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+.shadow {
+  box-shadow: 0 5px 10px rgba(51, 51, 51, 0.514);
+}
+.text h1 {
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+.text {
+  font-size: 0.8rem;
+}
+@media screen and (max-width: 780px) {
+  .container {
+    width: 90%;
+    padding: 0;
+  }
+  .sm-flex-col {
+    flex-direction: column;
+  }
+  .text {
+    text-align: center;
+    font-size: 1rem;
+  }
+  .text h1 {
+    font-size: 2rem;
+  }
+}
+
+/** form styles **/
+
+.form-wrapper {
+  width: 100%;
+}
+
+.form-wrapper .text {
+  width: 100%;
+  color: #fff;
+}
+.form-wrapper .form {
+  width: 100%;
+}
+.form-wrapper .form > .text {
+  background-color: var(--blue);
+  padding: 1rem;
+  width: 100%;
+  border-radius: var(--radius);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-wrapper .form form {
+  background-color: #fff;
+  border-radius: var(--radius);
+  padding: 2rem;
+  width: 100%;
+}
+.form-wrapper .form form > div {
+  width: 100%;
+  position: relative;
+  gap: 0;
+}
+.error img {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+}
+.error .error-message {
+  color: var(--red);
+  font-style: italic;
+  float: right;
+  font-size: 0.6rem;
+}
+.error .error-example {
+  font-size: 0.7rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  color: var(--red);
+  background-color: #fff;
+}
+
+#disclaimer {
+  font-size: 0.6rem;
+  text-align: center;
+  color: var(--grayish-blue);
+}
+
+#disclaimer #terms {
+    color: var(--red);
+    text-decoration: none;
+}
+#disclaimer #terms:hover {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 780px) {
+  .form-wrapper .form > .text {
+    margin: 2.5rem 0 1.5rem;
+    padding-inline: 4rem;
+  }
+  #disclaimer {
+    padding: 0 1rem;
+  }
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 1rem;
+}

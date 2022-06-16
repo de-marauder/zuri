@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link
+      rel="shortcut icon"
+      href="./images/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container flex flex-center">
+      <section class="form-wrapper flex flex-center sm-flex-col">
+        <div class="text flex-1">
+          <h1>Learn to code by watching others</h1>
+          <p>
+            See how experienced developers solve problems in realtime. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable
+          </p>
+        </div>
+        <div class="form flex-1">
+          <div class="text shadow">
+            <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+          </div>
+          <form class="flex flex-col shadow">
+            <div class="flex flex-col">
+              <input
+                required
+                placeholder="First name"
+                type="text"
+                name="f-name"
+                minlength="3"
+              />
+              <div class="error">
+                <img src="./images/icon-error.svg" alt="error-icon" />
+                <p class="error-message">First name should contain at least 3 characters</p>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <input
+                required
+                placeholder="Last name"
+                type="text"
+                name="l-name"
+                minlength="3"
+              />
+              <div class="error">
+                <img src="./images/icon-error.svg" alt="error-icon" />
+                <p class="error-message">Last name should contain at least 3 characters</p>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <input
+                required
+                placeholder="E-mail Address"
+                type="email"
+                name="email"
+              />
+              <div class="error">
+                <img src="./images/icon-error.svg" alt="error-icon" />
+                <p class="error-example">Try this format email@example/com</p>
+                <p class="error-message">Looks like this is not an email</p>
+              </div>
+            </div>
+            <div class="flex flex-col">
+              <input
+                required
+                placeholder="Password"
+                type="password"
+                name="password"
+                minlength="8"
+              />
+              <div class="error">
+                <img src="./images/icon-error.svg" alt="error-icon" />
+                <p class="error-message">Password should contain at least 8 characters</p>
+              </div>
+            </div>
+
+            <input value="Claim your free trial" type="submit" name="submit" />
+
+            <p id="disclaimer">
+              By clicking the button you are agreeing to our
+              <a id="terms" href="#">Terms and Services</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <p class="copyright">
+        Made by
+        <a href="https://de-marauder.vercel.app" target="_blank">de-marauder</a>
+      </p>
+    </footer>
+  </body>
+</html>

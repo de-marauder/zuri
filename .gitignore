@@ -6,3 +6,6 @@ pyvenv.cfg
 virtual/include
 
 my_env
+
+env
+db.sqlite3
