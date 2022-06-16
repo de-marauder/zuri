@@ -12,6 +12,7 @@
   /* primary */
   --red: hsl(0, 100%, 74%);
   --green: hsl(154, 59%, 51%);
+  --light-green: hsl(154, 59%, 61%);
 
   /* accent */
   --blue: hsl(248, 32%, 49%);
@@ -56,6 +57,10 @@ input[type="submit"] {
   color: #fff;
   font-weight: 700;
   background-color: var(--green);
+}
+input[type="submit"]:hover {
+  background-color: var(--light-green);
+  box-shadow: 0 0 3px var(--grayish-blue);
 }
 
 input[type="email"]:not(:focus):not(:placeholder-shown):invalid {
@@ -195,9 +200,10 @@ input:not(:focus):not(:placeholder-shown):invalid ~ .error {
 #disclaimer #terms {
     color: var(--red);
     text-decoration: none;
-}
-#disclaimer #terms:hover {
     font-weight: 600;
+  }
+  #disclaimer #terms:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 780px) {
