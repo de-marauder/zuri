@@ -1,0 +1,9 @@
+[submodule "django_project_4"]
+	path = django_project_4
+	url = https://github.com/de-marauder/django-CRUD-app.git
+[submodule "javascript_1"]
+	path = javascript_1
+	url = https://github.com/de-marauder/introduction-to-javascript.git
+[submodule "javascript_2"]
+	path = javascript_2
+	url = https://github.com/de-marauder/javascript-calculator-zuri-.git
